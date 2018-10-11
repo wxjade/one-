@@ -37,7 +37,7 @@ var login = (function(){
                 document.cookie = "token=" + data.data.token;
                 document.cookie = "user-id=" + data.data.id;
                 
-                location.href = '../../index_.html';
+                location.href = "index_.html";
             } else {
                 alert(data.msg);
             }

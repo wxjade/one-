@@ -14,33 +14,7 @@
     <link rel="stylesheet" href="icon/common/iconfont.css">
     <link rel="stylesheet" href="icon/iconfont.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
-    <style>
-        .swiper-container {
-            width: 100%;
-            height: 635px;
-        }
-
-        .swiper-container img {
-            width: 100%;
-            height: 635px;
-        }
-
-        .swiper-pagination-bullet {
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            line-height: 20px;
-            font-size: 12px;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .swiper-pagination-bullet-active {
-            color: #fff;
-            background: #007aff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/swiper/swiper_.css">
 </head>
 
 <body>
@@ -123,34 +97,33 @@
         <div class="swiper-wrapper">
             <!-- banner1 -->
             <div class="swiper-slide">
-                <!-- <div class="pa bannercont ">
-                    <h2>
-                        <span style="color:white">OnePlus 6T 新品发布会</span>
-                        <p style="color:white;font-size:48px;line-height:64px;height:80px">Unlock The Speed</p>
-                    </h2>
-                    <a href="product.html" class="ib abtn" style="color:white">立即购买</a>
-                    <a href="product.html" style="color:white;height:40px;line-height: 40px">11月 5日 14:00 深圳大运中心体育馆</a>
-                </div> -->
                 <img src="images/banner1.jpg" alt="">
+                <div class="bannercont1" style="color:white;">
+                    <span style="font-size: 24px">OnePlus 6T 新品发布会</span>
+                    <span style="font-size: 48px">Unlock The Speed</span>
+                    <a href="product.html">立即购买</a>
+                    <p>11月 5日 14:00 深圳大运中心体育馆</p>
+                </div>
             </div>
             <!-- banner2 -->
             <div class="swiper-slide">
-                <!-- <div class="pa bannercont" style="color:white;">
-                    <p>OnePlus6</p>
-                    <h1>全速旗舰</h1>
-                    <p class="price">￥3199起</p>
-                    <a href="product.html" class="ib abtn">立即购买</a>
-                    <a href="product.html">了解更多</a>
-                </div> -->
                 <img src="images/banner2.jpg" alt="">
+                <div class="bannercont2" style="color:white;">
+                    <span style="font-size: 24px">OnePlus6</span>
+                    <span style="font-size: 48px">全速旗舰</span>
+                    <p style="font-size: 28px;margin-top:10px;">￥3199起</p>
+                    <a href="product.html">立即购买</a>
+                    <p>了解更多</p>
+                </div>
             </div>
+
+
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
@@ -387,17 +360,12 @@
             direction: 'horizontal', // 垂直切换选项
             loop: true, // 循环模式选项
             autoplay: true,
-
             // 如果需要分页器
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-                /* renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                }, */
                 autoplay: true,
             },
-
             // 如果需要前进后退按钮
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -405,6 +373,7 @@
             }
         })        
     </script>
+
 </body>
 
 </html>

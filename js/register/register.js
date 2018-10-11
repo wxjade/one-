@@ -56,6 +56,7 @@ var register = (function(){
         register: function(data) {
             if(data.code == 200) {
                 //   注册成功
+                location.href = "Login.html";
              } else {
                 
              }

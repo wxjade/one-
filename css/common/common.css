@@ -1,14 +1,24 @@
 @charset "utf-8";
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, figure,figcaption,img { margin:0; padding:0; }
-i,em{font-style: normal;}
-b,strong{font-weight: normal;}
-a,u{text-decoration: none;}
-ul,li,ol{list-style: none;}
-h1,h2,h3,h4,h5,h6{font-weight: normal;}
-img{border: 0;display: block;}
-input{outline: none;border:0;}
-a{display: block;}
-button{cursor: pointer;}
-/* html,body{
-    width:100%;
-} */
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td  {margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,header,nav,article,aside,section,main,footer{margin: 0; padding: 0;font-weight: normal;}
+input{ outline: none;border: 0;}
+address,cite,dfn,em,var{font-style:normal;}
+img{vertical-align: middle;border: 0;}
+ul,ol{list-style:none;} 
+a:focus{text-decoration: none}
+a{color:#fff;text-decoration: none;cursor: pointer;display: block;}
+a:hover{text-decoration:none;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+.pr{  position: relative; }
+.pa{  position: absolute; }
+.vp{ vertical-align: top;}
+.vm{vertical-align: middle;}
+.ib{display: inline-block;}
+.clearfix{ overflow: hidden; }
+.clear{ clear: both;}
