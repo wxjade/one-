@@ -1,0 +1,179 @@
+#header{
+    width:100%;
+    height:60px;
+    .header{
+        width:1200px;
+        height:60px;
+        margin:0 auto;
+        display: flex;
+        .left-index{
+            width:60px;
+            height:60px;
+            float: left;
+            a{
+                width:60px;
+                height:60px;
+                display: flex;
+                color: rgb(235, 0, 40);
+                i{
+                    font-size: 30px;
+                    margin:auto;
+                }
+            }
+        }
+        .center-nav{
+            /* width:518px; */
+            height:60px;
+            display: inline-block; 
+            margin:auto;
+            li{
+                float: left;  
+                a{
+                    font-size: 14px;
+                    line-height: 60px;
+                    color:rgb(130, 130, 130);
+                    padding:0 35px;
+                } 
+                a:hover{
+                    color: rgb(235, 0, 40);
+                    height:58px;
+                    border-bottom: 2px solid rgb(235, 0, 40);
+                }
+            }
+            
+        }
+        .right{
+            /* width:177px; */
+            height:60px;
+            float: right;
+            li{
+                float: left;  
+                a{
+                    width:60px;
+                    height:60px;
+                    color: rgb(130, 130, 130);
+                    text-align: center;
+                    i{
+                        font-size: 22px;
+                        line-height: 60px;
+                        
+                    }
+                }
+                a:hover{
+                    color: rgb(16, 25, 32);
+                    height:58px;
+                    border-bottom: 2px solid rgb(16, 25, 32);
+                }
+                &:nth-child(1){
+                    position: relative;
+                    div{
+                        width:320px;
+                        height:275px;
+                        position: absolute;
+                        top:60px;
+                        right:-60px;
+                        display: none;
+                        border-top:1px solid rgba(0, 0, 0, 0.1);
+                        box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 10px;
+                        background-color: rgb(255, 255, 255);
+                        z-index: 10;
+                        ul{
+                            margin-top:20px;
+                            width:320px;
+                            height:255px;
+                            font-size: 14px;
+                            line-height: 60px;
+                            text-align: left;   
+                            li{
+                                display: block;
+                                width:280px;
+                                height:50px;
+                                margin:0 20px;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                                a{
+                                    width:280px;
+                                    height:50px;
+                                    text-align: left; 
+                                    color: rgb(130, 130, 130);
+                                    &:hover{
+                                        color: rgb(16, 25, 32);
+                                        border:0;
+                                    }  
+                                }
+                                &:nth-child(4){
+                                    border: 0;
+                                    margin:25px 20px;
+                                    a{
+                                        color: rgb(0, 153, 204);
+                                    }
+                                    &:hover{
+                                        text-decoration:underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover div{
+                        display: block;
+                        ul{
+                            color: rgb(16, 25, 32);                   
+                        }
+                    }
+                } 
+                &:nth-child(2){
+                    position: relative;
+                    .shop_box{
+                        display: none;
+                        width:320px;
+                        height:188px;
+                        position: absolute;
+                        top:60px;
+                        right:-60px;
+                        border-top:1px solid rgba(0, 0, 0, 0.1);
+                        box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 10px;
+                        background-color: rgb(255, 255, 255);
+                        z-index: 10;
+                        div{
+                            margin-top:30px;
+                            width:320px;
+                            height:70px;
+                            p{
+                                width:280px;
+                                height:24px;
+                                line-height: 24px;
+                                color: rgb(153, 153, 153);
+                                padding:20px;
+                                text-align: center;
+                            }
+                        }
+                        ul{
+                            width:320px;
+                            height:80px;
+                            margin-top: 10px;
+                            li{
+                                width:280px;
+                                height:60px;
+                                padding:10px 20px;
+                              
+                            }
+                            a{
+                                width:280px;
+                                height:40px;
+                                font-size: 14px;
+                                line-height: 40px;
+                                color: white;
+                                background-color: rgb(235, 0, 40);
+                                &:hover{
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                    &:hover .shop_box{
+                        display: block;
+                    }
+                }       
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* 清除样式 */
+a:focus{text-decoration: none}
+a{color:#fff;text-decoration: none;cursor: pointer;}
+a:hover{text-decoration:none;}
+fieldset,img{border:0;}
+.pr{  position: relative; }
+.pa{  position: absolute; }
+.vp{ vertical-align: top;}
+.vm{vertical-align: middle;}
+.ib{display: inline-block;}
+.clearfix{ overflow: hidden; }
+.clear{ clear: both;}
+/**/
+#wrap {
+    width:100%;
+    height: 635px;
+}
+#banner {
+    position: relative;
+    width: 100%;
+    height: 635px;
+    overflow: hidden;
+    
+}
+.bannerH {
+    width: 100%;
+    height: 635px;
+    position: absolute;
+}
+#banner img {
+    width: 100%;
+    height: 635px;
+}
+
+  #banner .iconfont {
+    font-size: 20px;
+    background-color: rgba(64, 61, 61, 0.2);
+    opacity: 0.2;
+    height: 50px;
+    color: #6c677c;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 5;
+  }
+  
+  .bannercont {
+    font-size: 20px;
+    z-index: 1;
+    line-height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #banner1 .bannercont {
+    left: 20%;
+  }
+  
+  #banner2 .bannercont, #banner3 .bannercont {
+    left: 60%;
+  }
+  
+  .bannercont .abtn {
+    width: 180px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000;
+    display: block;
+  }
+  
+  #leftbtn {
+    left: 78px;
+  }
+  
+  #rightbtn {
+    right: 78px;
+  }
+  
+  .bannerlist {
+    bottom: 25px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bannerlist a {
+    width: 40px;
+    line-height: 8px;
+    height: 12px;
+  }
+  
+  .bannerlist i {
+    background-color: #666666;
+    height: 2px;
+    width: 40px;
+    position: relative;
+    top: -3px;
+    overflow: hidden;
+    line-height: 2px;
+  }
+  
+  .bannerlist a span {
+    width: 0px;
+    position: relative;
+    top: -3px;
+    z-index: 5;
+    display: inline-block;
+    height: 10px;
+    background-color: #dfdfdf;
+  }
