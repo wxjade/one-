@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品</title>
+    <!-- 公共部分 -->
+    <link rel="stylesheet" href="icon/common/iconfont.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/foot.css">
+    <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="./css/right_scoll/drag.css">
+    <script src="js/right_scoll/jquery-1.12.3.js"></script>
+    <!-- 商品详情页 -->
+    <link rel="stylesheet" href="css/product/product.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div id="top">
+    </div>
+    <!-- con -->
+    <div id="main">
+        <div class="main">
+            <div class="img">
+                <ul>
+                    <li style="z-index: 2;">
+                        <img src="images/product/1.png" alt="">
+                    </li>
+                    <li style="z-index: 1;">
+                        <img src="images/product/5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="message">
+                <div class="title">
+                    <h2>OnePlus 6 保护套装（芳纶纤维）</h2>
+                </div>
+                <div class="middle">
+                    <div class="mid mid_box">
+                        <div class="middle-con">
+                            <h3>OnePlus 6 芳纶纤维保护壳</h3>
+                            <span>1个版本</span>
+                            <p>芳纶纤维</p>
+                        </div>
+                        <span><img src="images/product/6.png" alt=""></span>           
+                    </div>
+                    <div class="mid mid_box">
+                        <div class="middle-con">
+                            <h3>OnePlus 6 3D 钢化玻璃膜</h3>
+                            <span>1个版本</span>
+                            <p>黑色</p>
+                        </div>
+                        <span><img src="images/product/7.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="shop">
+                    <!-- <span class="oldprice">￥278.00</span>
+                    <span class="price">￥259.00</span><br/>
+                    <a href="shopCar.html" class="btn">加入购物车</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div id="bottom">
+    </div>
+
+    <!-- 引入公共部分 -->
+    <script>
+        $('#top').load('common.html #header');
+        $('#bottom').load('common.html #footer');
+        $('.right_box').load('common.html #wrapper');
+    </script>
+    <!-- 引入json -->
+    <script src="js/shopCar/ajax2.0.0.js"></script>
+    <script src="js/shopCar/shop.js"></script>
+    <script>
+        shopList.init('.shop');
+    </script>
+</body>
+
+</html>

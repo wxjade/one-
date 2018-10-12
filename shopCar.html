@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- 公共部分 -->
+    <link rel="stylesheet" href="icon/common/iconfont.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/foot.css">
+    <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="./css/right_scoll/drag.css">
+    <script src="js/right_scoll/jquery-1.12.3.js"></script>
+    <!-- 购物车 -->
+    <link rel="stylesheet" href="css/shopCar/shopCar.css">
+</head>
+<body>
+    <!-- top -->
+    <div id="top">
+    </div>
+    <!-- con -->
+    <div class="main">
+        <div class="con">
+            <ul>
+                <li>商品</li>
+                <li>价格</li>
+                <li>数量</li>
+                <li>总计</li>
+                <li>操作</li>
+            </ul>
+            <div class="shopCar">
+                <!-- <h3 class="shop-name">OnePlus 6 保护套装（芳纶纤维）</h3>
+                <span class="shop-price">￥259.00</span>
+                <input class="shop-count" type="number" value="1">
+                <span class="shop-total">￥259.00</span>
+                <i class="btn shop-btn-del">删除</i> -->
+            </div>
+        </div>
+
+    </div>
+    <!-- bottom -->
+    <div id="bottom">
+    </div>
+
+    <!-- 引入公共部分 -->
+    <script>
+        $('#top').load('common.html #header');
+        $('#bottom').load('common.html #footer');
+        $('.right_box').load('common.html #wrapper');
+    </script>
+    <!--  -->
+    <script src="js/shopCar/ajax2.0.0.js"></script>
+    <script src="js/shopCar/shop_car.js"></script>
+    <script>
+        shopCar.init('.shopCar');
+    </script>
+</body>
+</html>
