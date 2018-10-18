@@ -69,6 +69,12 @@
   border: 1px solid #101920;
   margin: 15px 0;
   padding: 0 17px;
+  background: #fff;
+  transition: background 0.25s ease;
+}
+#footer .footer_ul .ul_nav dl:nth-child(5) .nav_con .kefu:hover {
+  background: #101920;
+  color: #fff;
 }
 #footer .footer_ul .ul_nav dl:nth-child(5) .nav_con p:nth-of-type(1) {
   width: 240px;

@@ -16,14 +16,19 @@ var Banner = function() {
 
 $.extend(Banner.prototype, {
   init: function() {
+    // eq(index|-index),筛选获取匹配的元素
+    // stop(),停止所有在指定元素上正在运行的动画
+    // animate(),用于创建自定义动画的函数
+    // 进度条效果
     this.span.eq(this.index).stop(true, true).animate({
       'width': 40
-    }, 2000)
+    }, 5000)
     this.autoplay()
     this.btnhide()
     this.btnClick()
     this.listClick()
   },
+  // 自动播放
   autoplay: function() {
     this.timer = setInterval(function() {
       this.index++
@@ -32,7 +37,7 @@ $.extend(Banner.prototype, {
         }
       this.imgplay()
       this.btnplay()
-    }.bind(this), 2000);
+    }.bind(this), 5000);
   },
   imgplay: function() {
     this.banner.stop(true, true).fadeTo(500, 0)
@@ -44,7 +49,7 @@ $.extend(Banner.prototype, {
     }, 0)
     this.span.eq(this.index).stop(true, true).animate({
       'width': 40
-    }, 2000)
+    }, 5000)
   },
   btnhide: function() {
     this.btn.on('mouseover', function(event) {
@@ -55,7 +60,7 @@ $.extend(Banner.prototype, {
     this.btn.on('mouseout', function(event) {
       event.preventDefault();
       var target = $(event.target)
-      target.stop(true, true).fadeTo(300, 0.2)
+      target.stop(true, true).fadeTo(300, 0.6)
     })
   },
   btnClick: function() {

@@ -26,7 +26,6 @@
     </div>
     <!-- swiper -->
     <div id="wrap">
-
         <div id="banner" class="clearfix pr">
             <div class="bannerlist pa">
                 <a class="ib" href="javascript:void(0)">
@@ -61,7 +60,7 @@
                 </div>
                 <img class="pad" src="images/index/banner2.jpg" alt="">
             </div>
-
+            
             <div class="pr" style="z-index:-999;visibility:hidden">
                 <img class="pad" src="images/index/banner2.jpg" alt="">
             </div>
@@ -95,7 +94,7 @@
         <div class="img-box">
             <div>
                 <h3>Shot on OnePlus</h3>
-                <button>我要参加</button>
+                <button class="join">我要参加</button>
             </div>
         </div>
         <div class="part4">
@@ -143,6 +142,16 @@
         $('.bottom').load('common.html #foot');
         $('#bottom').load('common.html #footer');
         $('.right_box').load('common.html #wrapper');
+
+        $(".join").mouseover(function () {
+            $(".join").css("color","#000");
+            $(".join").css("background","#fff");
+        })
+
+        $(".join").mouseout(function () {
+            $(".join").css("color","#fff");
+            $(".join").css("background","");
+        })
     </script>
 
     <script src="js/swiper/jquery.min.js"></script>
